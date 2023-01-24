@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "a107de69-861c-4fd1-b1d6-48a56c35131c",
+		"name": "SpriteCloudAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16689290"
+	},
+	"item": [
+		{
+			"name": "SpriteCloud - Users Post",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Demo.1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "franklyn.noyola",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6543,\r\n    \"username\": \"franklyn.noyola\",\r\n    \"firstName\": \"Franklyn\",\r\n    \"lastName\": \"NOYOLA\",\r\n    \"email\": \"fnoyola@gmail.com\",\r\n    \"password\": \"Demo.1234\",\r\n    \"phone\": \"605914384\",\r\n    \"userStatus\": 1\r\n}"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/franklyn.noyola",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"franklyn.noyola"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
