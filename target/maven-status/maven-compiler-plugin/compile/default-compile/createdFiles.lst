@@ -1,0 +1,5 @@
+configurationSection\sampleApp.class
+configurationSection\settingFile.class
+configurationSection\textInput.class
+configurationSection\webElementsLinks.class
+configurationSection\classAttribute.class
