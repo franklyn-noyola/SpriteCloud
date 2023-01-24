@@ -26,5 +26,19 @@ When you have installed both Eclipse and Maven, open Eclipse IDE and create a Ma
  
 * Once test scripts are created, uploaded into your remote repository, in this case Github. So you can download them afterwards.
 
+Run the tests via Jenkins
+First of all, you've to install Jenkins. Follow the instructions to install it depending on your OS: https://www.jenkins.io/doc/book/installing/ (I've installed Jenkins for Windows latest version).
+
+After you followed the instructions and you are able to log in into jenkins, you should create the new pipeline where the tests will be run.
+
+Follow the following steps:
+
+Create a New Item and select Freestyle Project (put a name for your jenkins job)
+Click on OK Button
+Once you are in your Freestyle project screen
+Configure the project as follow:
+![image](https://user-images.githubusercontent.com/17472758/214388328-f4b392e8-c293-4835-b8cc-16639579bef8.png)
+
+
 
  
