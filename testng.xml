@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SpriteCloud Test Automation">
-    <test name="Test Automation">
+    <test name="Home Page">
          <classes>
              <class name="testClasses.HomePage"/>
           </classes>
+     </test> <!-- Test -->
+	 <test name="Class Attribute">
+         <classes>
+             <class name="testClasses.ClassAttribute"/>
+		</classes>
+     </test> <!-- Test -->
+	  <test name="Sample App">
+         <classes>
+             <class name="testClasses.SampleApp"/>
+		</classes>
+     </test> <!-- Test -->
+	  <test name="Text Input">
+         <classes>
+             <class name="testClasses.TextInput"/>
+		</classes>
      </test> <!-- Test -->
 </suite> <!-- Suite -->
