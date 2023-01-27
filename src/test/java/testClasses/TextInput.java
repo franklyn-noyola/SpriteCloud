@@ -36,7 +36,7 @@ public class TextInput extends settingFile {
 	
 	  @AfterTest
 	  public void tearDown() {	
-		  driver.close();
+		  driver.quit();
 		    String verificationErrorString = verificationErrors.toString();
 		    if (!"".equals(verificationErrorString)) {
 		      fail(verificationErrorString);

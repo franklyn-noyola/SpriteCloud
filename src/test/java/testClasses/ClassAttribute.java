@@ -18,12 +18,13 @@ public class ClassAttribute extends settingFile {
 	String baseURL = rb.getString("homePageURL");
 	
 	
-	/*@BeforeClass
+	@BeforeTest	
 	  public void setUp() {
-	
+		settingFile setFile = new settingFile();
+		setFile.setUp();
+		this.driver = setFile.driver;
 	  				
-		  }	*/
-	
+		  }	
 	@Test
 	public void classAttribute() throws Exception {
 		settingFile setFile = new settingFile();
@@ -33,7 +34,10 @@ public class ClassAttribute extends settingFile {
 		classAttribute classAttribute = PageFactory.initElements(driver, classAttribute.class);
 		classAttribute.classAttributeFunction();
 		Thread.sleep(2000);
-		driver.close();
+	}
+		@AfterTest
+		  public void tearDown() {	
+		driver.quit();
 	    String verificationErrorString = verificationErrors.toString();
 	    if (!"".equals(verificationErrorString)) {
 	      fail(verificationErrorString);

@@ -5,6 +5,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.WebDriver;
 import configurationSection.settingFile;
 import configurationSection.webElementsLinks;
+
+import static org.testng.Assert.fail;
+
 import java.util.ResourceBundle;
 
 public class HomePage extends settingFile {
@@ -32,9 +35,10 @@ public class HomePage extends settingFile {
 	
 	  @AfterTest
 	  public void tearDown() {	
-		  settingFile setFile = new settingFile();
-		  setFile.driver = this.driver;
-		  setFile.tearDown();
+		  driver.quit();
+		    String verificationErrorString = verificationErrors.toString();
+		    if (!"".equals(verificationErrorString)) {
+		      fail(verificationErrorString);
 		}
-	
+	  }
 }
