@@ -43,7 +43,7 @@ Follow the following steps:
 5. In the "Build" section select "Add build step" and from the dropdown pick "Invoke top-level Maven targets", then put in Maven Version the path you have configured previously in Global Tool Configuration and in the goals Clean Package.
 ![image](https://user-images.githubusercontent.com/17472758/214390080-71ed4069-2be0-4670-9fa5-b38c472535e6.png)
 
-#About the scenarios
+# About the scenarios
 I've chosen these scenarios because they are the more common in the all the functionalities of a Web Application regarding to  the end user's expectation of what I should to be expecting when using this kind of site. This kind of web is a test web in order to test a diveferent web elements behaviour. It is not complex, it is rather than easy. This is also a very good page to test for the  basic navigation of a site, by displaying the landing page properly and user able to navigate to the different menus and elements, selecting them and making sure that user will be redirected to the expected section. That's is the reason why I think the test that I have chosen are vedry important from my point o view.
 
 Next Steps
